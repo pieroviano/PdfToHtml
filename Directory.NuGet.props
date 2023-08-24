@@ -128,5 +128,8 @@
     <BarcodeVersion>1.0.0</BarcodeVersion>
     <CompressExistingPDFVersion>2.0.0</CompressExistingPDFVersion>
     <AppDomainAlternativeVersion>1.8.0</AppDomainAlternativeVersion>
+    <Win32InteropVersion>1.0.1</Win32InteropVersion>
+    <EasyTabsVersion>1.0.0</EasyTabsVersion>
+    <WindowsAPICodePackVersion>1.1.5</WindowsAPICodePackVersion>
   </PropertyGroup>
 </Project>
