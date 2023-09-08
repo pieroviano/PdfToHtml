@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Threading.Tasks;
-using PdfRepresantation;
-using PdfRepresentation.Extensions.Pdf;
+using PdfRepresentation.Client;
 using PdfRepresentation.Logging;
+using PdfRepresentation.Pdf;
 using PdfRepresentation.Test.Extensions;
 using Xunit;
 

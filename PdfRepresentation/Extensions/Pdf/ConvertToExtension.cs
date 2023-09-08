@@ -10,7 +10,7 @@ using PdfRepresentation.Model.Config;
 using PdfRepresentation.Model.Xml;
 using PdfRepresentation.Xml;
 
-namespace PdfRepresentation.Extensions.Pdf
+namespace PdfRepresentation.Pdf
 {
     public static class ConvertToExtension
     {

@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
+using PdfRepresentation.Helpers;
 using PdfRepresentation.Html.Base;
-using PdfRepresentation.Internals.Helpers;
 using PdfRepresentation.Model.Config;
 using PdfRepresentation.Model.Pdf;
 

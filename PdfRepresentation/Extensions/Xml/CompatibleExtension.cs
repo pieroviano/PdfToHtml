@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using CoreLibrary.Extensions.BaseTypes;
+using CoreLibrary.BaseTypes;
 using PdfRepresentation.Model.Xml;
 
-namespace PdfRepresentation.Extensions.Xml
+namespace PdfRepresentation.Xml
 {
     public static class CompatibleExtension
     {

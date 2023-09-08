@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace PdfRepresentation.Interfaces.Shared
+namespace PdfRepresentation.Shared
 {
     public interface IPdfConverter
     {

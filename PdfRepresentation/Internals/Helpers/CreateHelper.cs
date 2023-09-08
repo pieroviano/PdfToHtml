@@ -1,7 +1,7 @@
 ﻿using PdfRepresentation.Html;
 using PdfRepresentation.Model.Config;
 
-namespace PdfRepresentation.Internals.Helpers
+namespace PdfRepresentation.Helpers
 {
     internal class CreateHelper
     {

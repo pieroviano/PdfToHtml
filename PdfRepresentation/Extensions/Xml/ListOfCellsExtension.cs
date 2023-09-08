@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
-using PdfRepresentation.Internals.Helpers;
+using PdfRepresentation.Helpers;
 using PdfRepresentation.Model.Xml;
 
-namespace PdfRepresentation.Extensions.Xml
+namespace PdfRepresentation.Xml
 {
     public static class ListOfCellsExtension
     {

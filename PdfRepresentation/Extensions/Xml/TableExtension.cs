@@ -1,7 +1,6 @@
-﻿using System.Linq;
-using PdfRepresentation.Model.Xml;
+﻿using PdfRepresentation.Model.Xml;
 
-namespace PdfRepresentation.Extensions.Xml
+namespace PdfRepresentation.Xml
 {
     public static class TableExtension
     {

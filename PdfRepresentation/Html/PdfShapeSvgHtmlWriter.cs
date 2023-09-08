@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.Text;
-using PdfRepresentation.Internals.Helpers;
+using PdfRepresentation.Helpers;
 using PdfRepresentation.Model.Enums;
 using PdfRepresentation.Model.Pdf;
 

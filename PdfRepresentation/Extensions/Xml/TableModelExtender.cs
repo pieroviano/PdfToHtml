@@ -1,10 +1,10 @@
 ﻿using System.Data;
 using System.IO;
 using System.Text.RegularExpressions;
-using PdfRepresentation.Extensions.Pdf;
 using PdfRepresentation.Model.Xml;
+using PdfRepresentation.Pdf;
 
-namespace PdfRepresentation.Extensions.Xml
+namespace PdfRepresentation.Xml
 {
     public class TableModelExtender
     {

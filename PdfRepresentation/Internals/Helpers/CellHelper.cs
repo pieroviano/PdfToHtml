@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using PdfRepresentation.Model.Xml;
 
-namespace PdfRepresentation.Internals.Helpers
+namespace PdfRepresentation.Helpers
 {
     internal static class CellHelper
     {

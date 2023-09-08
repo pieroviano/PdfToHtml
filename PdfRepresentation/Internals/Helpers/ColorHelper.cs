@@ -1,7 +1,7 @@
 ﻿using System.Drawing;
 using System.Text;
 
-namespace PdfRepresentation.Internals.Helpers
+namespace PdfRepresentation.Helpers
 {
     internal class ColorHelper
     {

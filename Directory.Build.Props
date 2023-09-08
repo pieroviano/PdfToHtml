@@ -2,7 +2,7 @@
   <Import Project="Directory.NuGet.props" Condition="'$(DirectoryNuGet)'==''" />
   <PropertyGroup>
     <VersionPrefix>$(PdfRepresentationVersion)</VersionPrefix>
-    <VersionSuffix Condition="'$(Configuration)'!='Release'">0-at20230517063144</VersionSuffix>
-    <VersionSuffix Condition="'$(Configuration)'=='Release'">0</VersionSuffix>
+    <VersionSuffix Condition="'$(Configuration)'!='Release'">1-at20230517063144</VersionSuffix>
+    <VersionSuffix Condition="'$(Configuration)'=='Release'">1</VersionSuffix>
   </PropertyGroup>
 </Project>

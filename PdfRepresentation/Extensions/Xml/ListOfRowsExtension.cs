@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using PdfRepresentation.Model.Xml;
 
-namespace PdfRepresentation.Extensions.Xml
+namespace PdfRepresentation.Xml
 {
 
     public static class ListOfRowsExtension

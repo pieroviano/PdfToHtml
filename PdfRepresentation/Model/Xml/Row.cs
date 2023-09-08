@@ -3,8 +3,7 @@ using System.Linq;
 using System.Xml.Serialization;
 using CoreLibrary.Utility.Serialization;
 using Newtonsoft.Json;
-using PdfRepresentation.Extensions;
-using PdfRepresentation.Internals.Serialization;
+using PdfRepresentation.Serialization;
 
 namespace PdfRepresentation.Model.Xml
 {

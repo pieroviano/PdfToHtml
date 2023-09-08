@@ -1,6 +1,6 @@
-using CoreLibrary.Model.Configuration.Hosting;
+using CoreLibrary.Configuration.Hosting;
 
-namespace PdfRepresentation.Internals.Serialization
+namespace PdfRepresentation.Serialization
 {
     internal static class XmlDimensionsSerialization
     {

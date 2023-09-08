@@ -4,7 +4,7 @@ using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Web;
-using PdfRepresentation.Internals.Helpers;
+using PdfRepresentation.Helpers;
 using PdfRepresentation.Model.Pdf;
 
 namespace PdfRepresentation.Html

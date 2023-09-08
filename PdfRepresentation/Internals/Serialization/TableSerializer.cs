@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using PdfRepresentation.Model.Xml;
 
-namespace PdfRepresentation.Internals.Serialization
+namespace PdfRepresentation.Serialization
 {
     internal class TableSerializer<T>
     {

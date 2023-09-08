@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Globalization;
+using CoreLibrary.BaseTypes;
 using PdfRepresentation.Model.Xml;
 
-namespace PdfRepresentation.Extensions.Xml
+namespace PdfRepresentation.Xml
 {
     public static class MergeExtension
     {
@@ -14,7 +15,7 @@ namespace PdfRepresentation.Extensions.Xml
 
             if (distance >= 0 && distance < verticalTolerance && firstCell.IsOverlappingVertically(secondCell))
             {
-                nextRow.Cells = CoreLibrary.Extensions.BaseTypes.ArrayExtender.RemoveAt(nextRow.Cells, nextIndex, out var nextRowCell);
+                nextRow.Cells = ArrayExtender.RemoveAt(nextRow.Cells, nextIndex, out var nextRowCell);
                 var padding = firstCell.GetPaddingTo(secondCell);
                 cellToMergeIn.Text += $"{padding}{nextRowCell.Text}";
                 cellToMergeIn.Top = Math.Min((double)nextRowCell.GetTop(), cellToMergeIn.GetTop())
