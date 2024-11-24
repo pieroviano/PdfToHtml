@@ -1,44 +1,39 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
-  <Import Project="$(UserProfile)\.nuget\packages\nugetutility\$(NuGetUtilityVersion)\build\NuGet.Utility.targets" Condition="Exists('$(UserProfile)\.nuget\packages\nugetutility\$(NuGetUtilityVersion)\build\NuGet.Utility.targets')" />
-  <Import Project="$(UserProfile)\.nuget\packages\nugetutility\$(NuGetUtilityVersion)\build\NuGet.Utility.props" Condition="Exists('$(UserProfile)\.nuget\packages\nugetutility\$(NuGetUtilityVersion)\build\NuGet.Utility.props')" />
-  <PropertyGroup>
-    <TargetFrameworks>net40;net45;netstandard2.0;net5.0;net6.0;net7.0;net8.0</TargetFrameworks>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <IncludeSymbols>True</IncludeSymbols>
-    <SignAssembly>True</SignAssembly>
-    <AssemblyOriginatorKeyFile>..\PdfRepresentation.snk</AssemblyOriginatorKeyFile>
-    <LangVersion>latest</LangVersion>
-    <AllowNullable>true</AllowNullable>
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <Version>$(VersionPrefix).$(VersionSuffix)</Version>
-    <RunAnalyzersDuringBuild>False</RunAnalyzersDuringBuild>
-    <RunAnalyzersDuringLiveAnalysis>False</RunAnalyzersDuringLiveAnalysis>
-    <PackageId>Net4x.$(MSBuildProjectName)</PackageId>
-    <PackageOutputPath>$(SolutionDir)Packages\</PackageOutputPath>
-  </PropertyGroup>
-  <ItemGroup>
-    <PackageReference Include="Net4x.CoreLibrary.Base" Version="$(CoreLibraryVersion).$(VersionBuildSuffix)" />
-    <PackageReference Include="Net4x.iText.Commons" Version="$(Net4xiTextVersion).$(VersionBuildSuffix)" />
-    <PackageReference Include="Net4x.iText.Kernel" Version="$(Net4xiTextVersion).$(VersionBuildSuffix)" />
-    <PackageReference Include="Net4x.iText.IO" Version="$(Net4xiTextVersion).$(VersionBuildSuffix)" />
-    <PackageReference Include="Newtonsoft.Json" Version="$(NewtonsoftJsonVersion)" />
-    <PackageReference Include="NuGetUtility" Version="$(NuGetUtilityVersion)" PrivateAssets="All" />
-  </ItemGroup>
-  <ItemGroup>
-    <PackageReference Include="System.Drawing.Common" Version="$(SystemDrawingCommonVersion)" Condition="'$(TargetFramework)'=='netstandard2.0'" />
-    <PackageReference Include="System.Drawing.Common" Version="$(SystemDrawingCommonVersion)" Condition="'$(TargetFramework)'=='net5.0'" />
-    <PackageReference Include="System.Drawing.Common" Version="$(SystemDrawingCommonVersion)" Condition="'$(TargetFramework)'=='net6.0'" />
-    <PackageReference Include="System.Drawing.Common" Version="$(SystemDrawingCommonVersion)" Condition="'$(TargetFramework)'=='net7.0'" />
-    <PackageReference Include="System.Drawing.Common" Version="$(SystemDrawingCommonVersion)" Condition="'$(TargetFramework)'=='net8.0'" />
-    <PackageReference Include="Net4x.ValueTuple" Version="$(Net4xValueTupleVersion).$(VersionBuildSuffix)" />
-    <PackageReference Include="Net4x.AsyncBridge" Version="$(Net4xAsyncBridgeVersion).$(VersionBuildSuffix)" />
-    <PackageReference Include="System.ValueTuple" Version="4.5.0" Condition="'$(TargetFramework)'=='net45'" />
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="System.Drawing" Condition="'$(TargetFramework)'=='net40'" />
-    <Reference Include="System.Web" Condition="'$(TargetFramework)'=='net40'" />
-    <Reference Include="System.Drawing" Condition="'$(TargetFramework)'=='net45'" />
-    <Reference Include="System.Web" Condition="'$(TargetFramework)'=='net45'" />
-  </ItemGroup>
+    <Import Condition="Exists('$(UserProfile)\.nuget\packages\nugetutility\$(NuGetUtilityVersion)\build\NuGet.Utility.targets')" Project="$(UserProfile)\.nuget\packages\nugetutility\$(NuGetUtilityVersion)\build\NuGet.Utility.targets" />
+    <Import Condition="Exists('$(UserProfile)\.nuget\packages\nugetutility\$(NuGetUtilityVersion)\build\NuGet.Utility.props')" Project="$(UserProfile)\.nuget\packages\nugetutility\$(NuGetUtilityVersion)\build\NuGet.Utility.props" />
+    <PropertyGroup>
+        <TargetFrameworks>net40;net45;netstandard2.0;net5.0;net6.0;net7.0;net8.0</TargetFrameworks>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <IncludeSymbols>True</IncludeSymbols>
+        <SignAssembly>True</SignAssembly>
+        <AssemblyOriginatorKeyFile>..\PdfRepresentation.snk</AssemblyOriginatorKeyFile>
+        <LangVersion>latest</LangVersion>
+        <AllowNullable>true</AllowNullable>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <Version>$(VersionPrefix).$(VersionSuffix)</Version>
+        <RunAnalyzersDuringBuild>False</RunAnalyzersDuringBuild>
+        <RunAnalyzersDuringLiveAnalysis>False</RunAnalyzersDuringLiveAnalysis>
+        <PackageId>Net4x.$(MSBuildProjectName)</PackageId>
+        <PackageOutputPath>$(SolutionDir)Packages\</PackageOutputPath>
+        <DontConvert>False</DontConvert>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="Net4x.AsyncBridge" Version="$(Net4xAsyncBridgeVersion).$(VersionBuildSuffix)" />
+        <PackageReference Include="Net4x.CoreLibrary.Base" Version="$(CoreLibraryVersion).$(VersionBuildSuffix)" />
+        <PackageReference Include="Net4x.iText.Commons" Version="$(Net4xiTextVersion).$(VersionBuildSuffix)" />
+        <PackageReference Include="Net4x.iText.IO" Version="$(Net4xiTextVersion).$(VersionBuildSuffix)" />
+        <PackageReference Include="Net4x.iText.Kernel" Version="$(Net4xiTextVersion).$(VersionBuildSuffix)" />
+        <PackageReference Include="Net4x.ValueTuple" Version="$(Net4xValueTupleVersion).$(VersionBuildSuffix)" />
+        <PackageReference Include="Newtonsoft.Json" Version="$(NewtonsoftJsonVersion)" />
+        <PackageReference Include="NuGetUtility" PrivateAssets="All" Version="$(NuGetUtilityVersion)" />
+        <PackageReference Include="System.Drawing.Common" Condition="'$(TargetFramework)'=='netstandard2.0' or '$(TargetFramework)'=='net5.0' or '$(TargetFramework)'=='net6.0' or '$(TargetFramework)'=='net7.0' or '$(TargetFramework)'=='net8.0'" Version="$(SystemDrawingCommonVersion)" />
+        <PackageReference Include="System.ValueTuple" Condition="'$(TargetFramework)'=='net45'" Version="4.5.0" />
+    </ItemGroup>
+    <ItemGroup>
+        <Reference Include="System.Drawing" Condition="'$(TargetFramework)'=='net40'" />
+        <Reference Include="System.Drawing" Condition="'$(TargetFramework)'=='net45'" />
+        <Reference Include="System.Web" Condition="'$(TargetFramework)'=='net40'" />
+        <Reference Include="System.Web" Condition="'$(TargetFramework)'=='net45'" />
+    </ItemGroup>
 </Project>
