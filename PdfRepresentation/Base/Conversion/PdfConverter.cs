@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
-using PdfRepresentation.Interfaces.Shared;
 using PdfRepresentation.Logic;
+using PdfRepresentation.Shared;
 
 namespace PdfRepresentation.Base.Conversion
 {

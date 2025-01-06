@@ -1,12 +1,11 @@
 ﻿using System;
 using System.Xml.Serialization;
-using CoreLibrary.Model.Configuration.Hosting;
+using CoreLibrary.Configuration.Hosting;
 using CoreLibrary.Utility.Serialization;
 using Newtonsoft.Json;
-using PdfRepresentation.Extensions;
-using PdfRepresentation.Extensions.Xml;
-using PdfRepresentation.Internals.Helpers;
-using PdfRepresentation.Internals.Serialization;
+using PdfRepresentation.Helpers;
+using PdfRepresentation.Serialization;
+using PdfRepresentation.Xml;
 
 namespace PdfRepresentation.Model.Xml
 {
@@ -16,7 +15,7 @@ namespace PdfRepresentation.Model.Xml
     {
         static TablesModel()
         {
-            var argumentGetter = ArgumentGetterHost.Instance.ArgumentGetter;
+            var argumentGetter = ArgumentGetterHost<string>.Instance.ArgumentGetter;
             HorizontalTolerance =
                 (double)(argumentGetter?.DecimalFromArguments["HorizontalTolerance", (decimal)3.5] ?? (decimal)3.5);
             VerticalTolerance = (double)(argumentGetter?.DecimalFromArguments["VerticalTolerance", (decimal)1.0] ??

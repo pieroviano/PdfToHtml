@@ -1,7 +1,7 @@
 ﻿using System.Xml.Serialization;
 using CoreLibrary.Utility.Serialization;
-using PdfRepresentation.Internals.Helpers;
-using PdfRepresentation.Internals.Serialization;
+using PdfRepresentation.Helpers;
+using PdfRepresentation.Serialization;
 
 namespace PdfRepresentation.Model.Xml
 {

@@ -1,6 +1,4 @@
-﻿using PdfRepresentation.Interfaces.Log;
-
-namespace PdfRepresentation.Logging
+﻿namespace PdfRepresentation.Logging
 {
     public static class Log
     {

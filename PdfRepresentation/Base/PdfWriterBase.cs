@@ -1,5 +1,4 @@
 ﻿using System.IO;
-using PdfRepresentation.Interfaces;
 using PdfRepresentation.Model.Pdf;
 
 namespace PdfRepresentation.Base

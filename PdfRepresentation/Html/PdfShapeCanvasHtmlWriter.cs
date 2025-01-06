@@ -2,7 +2,7 @@
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using PdfRepresentation.Internals.Helpers;
+using PdfRepresentation.Helpers;
 using PdfRepresentation.Model.Pdf;
 
 namespace PdfRepresentation.Html

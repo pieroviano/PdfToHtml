@@ -5,7 +5,7 @@ using PdfRepresentation.Logic;
 using PdfRepresentation.Model.Pdf;
 using PdfRepresentation.Xml;
 
-namespace PdfRepresentation.Extensions.Pdf
+namespace PdfRepresentation.Pdf
 {
     public static class PdfDetailsExtension
     {

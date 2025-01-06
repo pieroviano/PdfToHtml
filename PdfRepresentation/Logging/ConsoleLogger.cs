@@ -1,5 +1,4 @@
 ﻿using System;
-using PdfRepresentation.Interfaces.Log;
 
 namespace PdfRepresentation.Logging
 {

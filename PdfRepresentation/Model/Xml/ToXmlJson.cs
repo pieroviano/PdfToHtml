@@ -1,4 +1,4 @@
-﻿using CoreLibrary.Model.Serialization;
+﻿using CoreLibrary.Serialization;
 using CoreLibrary.Utility.Serialization;
 
 namespace PdfRepresentation.Model.Xml

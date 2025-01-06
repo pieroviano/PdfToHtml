@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using PdfRepresentation.Extensions;
 using PdfRepresentation.Model.Xml;
 
-namespace PdfRepresentation.Internals.Helpers
+namespace PdfRepresentation.Helpers
 {
     internal static class CellPositionHelper
     {

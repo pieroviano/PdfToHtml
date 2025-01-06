@@ -2,7 +2,7 @@
 
 namespace PdfRepresentation.Server
 {
-    public class WebLogger : PdfRepresentation.Interfaces.Log.ILogger
+    public class WebLogger : PdfRepresentation.Logging.ILogger
     {
         private readonly Microsoft.Extensions.Logging.ILogger aspLogger;
 

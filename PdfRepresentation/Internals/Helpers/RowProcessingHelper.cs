@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using PdfRepresentation.Extensions.Xml;
 using PdfRepresentation.Model.Xml;
+using PdfRepresentation.Xml;
 
-namespace PdfRepresentation.Internals.Helpers
+namespace PdfRepresentation.Helpers
 {
     internal class RowProcessingHelper
     {

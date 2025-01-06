@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using PdfRepresentation.Model.Xml;
 
-namespace PdfRepresentation.Internals.Helpers
+namespace PdfRepresentation.Helpers
 {
     internal static class UnknownHelper
     {

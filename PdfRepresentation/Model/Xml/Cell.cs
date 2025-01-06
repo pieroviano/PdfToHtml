@@ -1,6 +1,6 @@
 ﻿using System.Xml.Serialization;
 using CoreLibrary.Utility.Serialization;
-using PdfRepresentation.Internals.Serialization;
+using PdfRepresentation.Serialization;
 
 namespace PdfRepresentation.Model.Xml
 {

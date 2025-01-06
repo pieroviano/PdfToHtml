@@ -3,7 +3,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PdfRepresantation
+namespace PdfRepresentation.Client
 {
     public interface IPdfConverter
     {

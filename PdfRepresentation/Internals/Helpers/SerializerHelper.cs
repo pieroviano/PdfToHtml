@@ -1,9 +1,9 @@
 using System;
-using CoreLibrary.Model.Serialization;
+using CoreLibrary.Serialization;
 using CoreLibrary.Utility.Serialization;
-using PdfRepresentation.Internals.Serialization;
+using PdfRepresentation.Serialization;
 
-namespace PdfRepresentation.Internals.Helpers
+namespace PdfRepresentation.Helpers
 {
     internal static class SerializerHelper
     {

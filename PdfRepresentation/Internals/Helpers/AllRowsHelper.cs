@@ -2,7 +2,7 @@
 using System.Linq;
 using PdfRepresentation.Model.Xml;
 
-namespace PdfRepresentation.Internals.Helpers
+namespace PdfRepresentation.Helpers
 {
     internal class AllRowsHelper
     {

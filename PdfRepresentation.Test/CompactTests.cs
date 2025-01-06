@@ -2,13 +2,13 @@
 using System.Text;
 using System.Text.RegularExpressions;
 using ConfigurationLibrary.Arguments;
-using CoreLibrary.Model.Configuration.Hosting;
-using CoreLibrary.Model.Serialization;
+using CoreLibrary.Configuration.Hosting;
+using CoreLibrary.Serialization;
 using CoreLibrary.Utility.Serialization;
 using Newtonsoft.Json;
-using PdfRepresentation.Extensions.Xml;
 using PdfRepresentation.Model.Xml;
 using PdfRepresentation.Test.Properties;
+using PdfRepresentation.Xml;
 using Xunit;
 
 namespace PdfRepresentation.Test
@@ -17,7 +17,7 @@ namespace PdfRepresentation.Test
     {
         public CompactTests()
         {
-            ArgumentGetterHost.Instance.ArgumentGetter = ArgumentGetter.Instance;
+            ArgumentGetterHost<string>.Instance.ArgumentGetter = ArgumentGetter.Instance;
         }
 
         [Fact]

@@ -1,6 +1,6 @@
 ﻿using PdfRepresentation.Model.Pdf;
 
-namespace PdfRepresentation.Interfaces
+namespace PdfRepresentation
 {
     public interface IPdfWriter
     {

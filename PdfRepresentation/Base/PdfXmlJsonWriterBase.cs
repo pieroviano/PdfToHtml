@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using PdfRepresentation.Interfaces;
 using PdfRepresentation.Model.Common;
 using PdfRepresentation.Model.Config;
 using PdfRepresentation.Model.Pdf;

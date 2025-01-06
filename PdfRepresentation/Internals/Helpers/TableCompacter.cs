@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using CoreLibrary.Extensions.BaseTypes;
+using CoreLibrary.BaseTypes;
 using PdfRepresentation.Model.Xml;
 
-namespace PdfRepresentation.Internals.Helpers
+namespace PdfRepresentation.Helpers
 {
     internal class TableCompacter
     {

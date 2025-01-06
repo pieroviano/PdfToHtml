@@ -1,7 +1,7 @@
 ﻿using System;
 using PdfRepresentation.Model.Xml;
 
-namespace PdfRepresentation.Internals.Helpers
+namespace PdfRepresentation.Helpers
 {
     internal static class HorizontalToleranceHelper
     {
