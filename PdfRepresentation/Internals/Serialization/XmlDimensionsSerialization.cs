@@ -8,12 +8,12 @@ namespace PdfRepresentation.Serialization
         {
             get
             {
-                var argumentGetter = ArgumentGetterHost.Instance.ArgumentGetter;
+                var argumentGetter = ArgumentGetterHost<string>.Instance.ArgumentGetter;
                 return argumentGetter?.BooleanFromArguments["ShouldSerializeDimensions", true] ?? false;
             }
             set
             {
-                var argumentGetter = ArgumentGetterHost.Instance.ArgumentGetter;
+                var argumentGetter = ArgumentGetterHost<string>.Instance.ArgumentGetter;
                 if (argumentGetter != null)
                 {
                     argumentGetter.BooleanFromArguments["ShouldSerializeDimensions"] = value;

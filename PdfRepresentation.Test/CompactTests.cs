@@ -17,7 +17,7 @@ namespace PdfRepresentation.Test
     {
         public CompactTests()
         {
-            ArgumentGetterHost.Instance.ArgumentGetter = ArgumentGetter.Instance;
+            ArgumentGetterHost<string>.Instance.ArgumentGetter = ArgumentGetter.Instance;
         }
 
         [Fact]
